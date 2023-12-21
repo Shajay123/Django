@@ -39,7 +39,6 @@ def updateData(request,id):
         edit.age=age
         edit.save()
         messages.warning(request,"Data Updated Successfully")
-
         return redirect("/")
 
     d=Student.objects.get(id=id)
